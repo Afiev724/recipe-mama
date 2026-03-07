@@ -95,3 +95,58 @@ body{
     text-align:center;
 
 }
+.recipe-page{
+    width:900px;
+    margin:0 auto;
+}
+
+.recipe-title{
+    text-align: center;
+    margin-top: 40px;
+}
+
+.recipe-image{
+    display:flex;
+    justify-content: center;
+    margin:40px;
+}
+
+.recipe-image img{
+    width:800px;
+    height:350px;
+    object-fit:cover;
+    border-radius:10px;
+}
+
+.recipe-info-container{
+    display:flex;
+    justify-content:center;
+    gap:80px;
+    margin-top:40px;
+}
+    
+.ingredients-box{
+    width:260px;
+    height:350px;
+    background:#d9d9d9;
+    padding:20px;
+    border-radius:10px;
+}
+
+.recipe-info-box{
+    width:260px;
+    height:350px;
+    background:#d9d9d9;
+    padding:20px;
+    border-radius:10px;
+}
+.review-button{
+    text-align:center;
+    margin:30px 0;
+}
+.recipe-steps{
+    width:800px;
+    margin:0 auto;
+    line-height:1.7;
+}
+
