@@ -95,3 +95,19 @@ body{
     text-align:center;
 
 }
+
+.recipe-title{
+    text-align: center;
+    margin-top: 40px;
+}
+
+.recipe-image{
+    display:flex;
+    justify-content: center;
+    margin:40px;
+}
+
+.recipe-image img{
+    width: 700px;
+    border-radius: 10px;
+}
