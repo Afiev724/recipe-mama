@@ -10,35 +10,43 @@
 
 <body>
 
+<main>
+
   <header class="header">
-    <div class="header-left"></div>
+
+    <div class="header-left">
+        <input type="text" placeholder="Search Recipes..." class="search-bar">
+    </div>
+
     <h1 class="logo">Recipe Mama</h1>
-  </header>
+
+    <div class="header-right">
+        <a href="#">Sign in</a>
+        <button class="subscribe-btn">Subscribe</button>
+    </div>
+
+</header>
 
 
-  <nav class="main-nav">
+<nav class="main-nav">
     <a href="index.html">Home</a>
     <a href="recipelist.html">Recipe List</a>
     <a href="reviews.html">Reviews</a>
     <a href="addyourown.html">Add Your Own</a>
-  </nav>
+</nav>
 
 
-  <section class="reicpe-ls-intro">
 
-    <h1>View our various recipes down below</h1>
+  <section class="reicpe-list-intro">
 
-    <p>
-      Nullam gravida dictum posuere. Vivamus enim odio, luctus eget convallis id, laoreet in enim.
-      Sed tempor dui eget lectus tincidunt, et consequat dolor consectetur. Proin placerat luctus
-      libero, eu euismod augue imperdiet sit amet. Proin hendrerit tortor odio, eget bibendum eros
-      fringilla non.
-    </p>
+    <h2>View our various recipes down below</h2>
 
-    <div class="search-filter">
-      <input type="text" placeholder="Filter">
-      <input type="text" placeholder="Search">
-    </div>
+    <h3>
+      On this page, you have vast selection of recipes! <br>
+      You can hover on one of the recipe cards to see the ingredients,and cook time and if you're interested, then you can click on it.
+      One you click on the recipe card, it will talk you to the recipe's page, and you can click the instructions as you go!
+    </h3>
+
 
   </section>
 
@@ -58,12 +66,13 @@
 
             <div class="card-flip-front">
               <h3>Honey Garlic Chicken</h3>
-              <img src="images/honeygarlic.png" class="recipe-pic">
+              <img src="images/honeygarlic.png" class="recipe-img" alt ="picture of honey garlic chicken">
             </div>
 
             <div class="card-flip-back">
               <h3>Honey Garlic Chicken</h3>
               <p>Cook time: 20 min</p>
+              <p>4 boneless, skinless chick thighs, 1/3 cup of honey, 4 cloves garlic...</p>
             </div>
 
           </div>
@@ -79,11 +88,13 @@
 
             <div class="card-flip-front">
               <h3>Garlic Parmesan Chicken</h3>
-              <img src="images/garlicparmesanchickenbites.jpeg" class="recipe-img">
+              <img src="images/garlicparmesanchickenbites.jpeg" class="recipe-img" alt="picture of garlic parmesan chicken bites.">
             </div>
 
             <div class="card-flip-back">
+              <h3>Garlic Parmesan Chicken</h3>
               <p>Cook time: 25 min</p>
+              <p>Ingredients: 1 1/2 pounds of boneless, skinless chick thighs or breast, 3 cloves of garlic, 1 ounce parmesan cheese...</p>
             </div>
 
           </div>
@@ -99,11 +110,13 @@
 
             <div class="card-flip-front">
               <h3>Greek Chicken</h3>
-              <img src="images/greekchicken.png" class="recipe-img">
+              <img src="images/greekchicken.png" class="recipe-img" alt="picture of greek chicken">
             </div>
 
             <div class="card-flip-back">
+              <h3>Greek Chicken</h3>
               <p>Cook time: 30 min</p>
+              <p>Ingredients: 2 large lemons, 1 small shallot, 2 pounds of boneless chicken thighs...</p>
             </div>
 
           </div>
@@ -128,7 +141,7 @@
 
             <div class="card-flip-front">
               <h3>Marry Me Salmon</h3>
-              <img src="images/marysalmon.png" class="recipe-img">
+              <img src="images/marysalmon.png" class="recipe-img" alt="picture of marry me salmon">
             </div>
 
             <div class="card-flip-back">
@@ -150,7 +163,7 @@
 
             <div class="card-flip-front">
               <h3>Easy Salmon Patties & Lemon Garlic Sauce</h3>
-              <img src="images/salmonpatties.png" class="recipe-img">
+              <img src="images/salmonpatties.png" class="recipe-img" alt="picture of salmon patties drizzled with lemon garlic sauce">
             </div>
 
             <div class="card-flip-back">
@@ -172,7 +185,7 @@
 
             <div class="card-flip-front">
               <h3>One Pan Creamy Garlic Shrimp</h3>
-              <img src="images/onepan.png" class="recipe-img">
+              <img src="images/onepan.png" class="recipe-img" alt="creamy garlic shrimp in a one pot">
             </div>
 
             <div class="card-flip-back">
@@ -203,7 +216,7 @@
 
             <div class="card-flip-front">
               <h3>Instant Pot Beef and Broccoli</h3>
-              <img src="images/instantbeefandbroccoli.jpg" class="recipe-img">
+              <img src="images/instantbeefandbroccoli.jpg" class="recipe-img" alt="picture of one pot beef and broccoli">
             </div>
 
             <div class="card-flip-back">
@@ -225,7 +238,7 @@
 
             <div class="card-flip-front">
               <h3>Pesto Quinoa Salad </h3>
-              <img src="images/pestoquinoa.jpg" class="recipe-img">
+              <img src="images/pestoquinoa.jpg" class="recipe-img" alt="picture of pesto quinoa salad">
             </div>
 
             <div class="card-flip-back">
@@ -247,7 +260,7 @@
 
             <div class="card-flip-front">
               <h3>Stir Fry Vermicelli Noodles</h3>
-              <img src="images/stirfry.jpg" class="recipe-img">
+              <img src="images/stirfry.jpg" class="recipe-img" alt="picture of stir fry vermicelli noodles">
             </div>
 
             <div class="card-flip-back">
@@ -264,6 +277,6 @@
     </div>
 
   </section>
-
+</main>
 </body>
 </html>
