@@ -1,17 +1,21 @@
-/*let me know what you think of these theme colors, I got them off pinterest:
---powder: #FDF5F4;
---blush: #FFF1EF;
---dusty-pink: #EFE2E0;
---latte: #DFD4CC;
---light-taupe: #dfcdd5;
---mocca: #c2adai
-*/
 
 body{
     background:#FDF5F4;
     font-family:"Libre Baskerville", serif;
 }
 
+a{
+    color:black;
+    text-decoration:none;
+}
+
+a:visited{
+    color:black;
+}
+
+a:hover{
+    color:#765a7b;
+}
 
 
 h2{
@@ -228,6 +232,7 @@ main{
 .recipe-info-container{
     display:grid;
     grid-template-columns:2fr 1fr;
+    margin:40px 0;
     gap:60px;
     align-items:start;
 }
@@ -252,12 +257,19 @@ main{
 
 
 /* Review button */
-
 .review-button{
-    text-align:center;
-    margin:35px 0;
+    text-align: center;
+    margin-top: 30px;
+    
 }
-
+.review-btn{
+    display:inline-block;
+    padding:10px 20px;
+    background:#f0e0e0;
+    color:white;
+    text-decoration:none;
+    border-radius:5px;
+  }
 
 /* Instructions section */
 
