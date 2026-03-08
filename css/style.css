@@ -296,6 +296,12 @@ input[type="radio"]{
 ========================= */
 
 @media (max-width:768px){
+    
+.card-flip {
+    width: 45%;
+    height: 260px; 
+}
+    
 
 .header{
     flex-direction:column;
