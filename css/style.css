@@ -1,3 +1,6 @@
+*{
+    box-sizing:border-box;
+}
 
 body{
     background:#FDF5F4;
@@ -17,23 +20,19 @@ a:hover{
     color:#765a7b;
 }
 
-
 h2{
     font-family:"Playfair Display", serif;
     font-size:32px;
     font-weight:600;
     letter-spacing:.4px;
-
     margin-bottom:15px;
 }
-
 
 h3{
     font-family:"Playfair Display", serif;
     font-size:25px;
     font-weight:600;
     letter-spacing:.4px;
-
     margin-bottom:15px;
 }
 
@@ -42,20 +41,22 @@ h4{
     font-size:20px;
     font-weight:600;
     letter-spacing:.4px;
-
     margin-bottom:15px;
-
 }
+
 main{
     max-width:1100px;
     margin:auto;
 }
+
+/* Header */
+
 .header{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
     background:#c2ada1;
-    padding: 15px 40px;
+    padding:15px 40px;
     font-size:20px;
 }
 
@@ -64,16 +65,24 @@ main{
     left:50%;
     transform:translateX(-50%);
 }
+
+/* Navigation */
+
+.main-nav{
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    padding:15px;
+    background:#dfcdd5;
+}
+
 .main-nav a{
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    padding: 15px;
-    background: #dfcdd5;
     text-transform:uppercase;
     letter-spacing:.08em;
     font-size:14px;
 }
+
+/* Intro */
 
 .introduction{
     max-width:700px;
@@ -81,12 +90,14 @@ main{
     text-align:center;
     line-height:1.6;
 }
+
+/* Testimonials */
+
 .testimonials{
     margin:80px auto;
     text-align:center;
-    gap:40px;
-    margin-top:30px;
 }
+
 .testimonial-grid{
     display:flex;
     justify-content:center;
@@ -97,20 +108,15 @@ main{
 .testimonial-card{
     width:300px;
     padding:25px;
-
     background:white;
     border-radius:12px;
-
     box-shadow:0 8px 18px rgba(0,0,0,0.1);
-
     font-size:20px;
     line-height:1.6;
 }
-.testimonial-card h4{
-    margin-top:15px;
-    font-style:normal;
-    font-weight:600;
-}
+
+/* Recipe cards */
+
 .recipe-grid{
     display:flex;
     gap:40px;
@@ -118,7 +124,6 @@ main{
     flex-wrap:wrap;
 }
 
-/* Card container */
 .card-flip{
     width:200px;
     height:260px;
@@ -132,7 +137,6 @@ main{
     box-shadow:0 14px 28px rgba(0,0,0,0.18);
 }
 
-/* Inner flipping element */
 .card-flip-inner{
     position:relative;
     width:100%;
@@ -145,7 +149,6 @@ main{
     transform:rotateY(180deg);
 }
 
-/* Front and back share base styling */
 .card-flip-front,
 .card-flip-back{
     position:absolute;
@@ -156,32 +159,24 @@ main{
     overflow:hidden;
 }
 
-/* FRONT SIDE */
 .card-flip-front{
     display:flex;
     flex-direction:column;
     background:white;
 }
 
-/* Title */
 .card-flip-front h3{
     padding:15px;
     margin:0;
-    font-family:"Playfair Display", serif;
     font-size:18px;
-    font-weight:600;
 }
 
-/* Image fills remaining space */
 .card-flip-front img{
     width:100%;
     flex-grow:1;
     object-fit:cover;
-    border-bottom-left-radius:12px;
-    border-bottom-right-radius:12px;
 }
 
-/* BACK SIDE */
 .card-flip-back{
     background:white;
     transform:rotateY(180deg);
@@ -193,25 +188,12 @@ main{
     text-align:center;
 }
 
-
-
+/* Recipe Page */
 
 .recipe-page{
     max-width:900px;
     margin:0 auto;
     padding:20px;
-}
-
-
-.recipe-title h1{
-    text-align:center;
-    font-family: "Playfair Display", serif;
-    font-size:48px;
-    font-weight:600;
-    letter-spacing:.5px;
-
-    margin-top:40px;
-    margin-bottom:10px;
 }
 
 .recipe-image{
@@ -223,20 +205,19 @@ main{
 .recipe-image img{
     width:100%;
     max-width:750px;
-    height:350px;
-    object-fit:cover;
+    height:auto;
+    display:block;
     border-radius:12px;
 }
 
+/* Ingredients + info */
 
 .recipe-info-container{
     display:grid;
     grid-template-columns:2fr 1fr;
     margin:40px 0;
     gap:60px;
-    align-items:start;
 }
-
 
 .ingredients,
 .recipe-info-box{
@@ -246,41 +227,33 @@ main{
     min-height:320px;
 }
 
-
-
 .ingredients ul{
     padding-left:20px;
     line-height:1.8;
-    font-size: 20px;
-
+    font-size:20px;
 }
-
 
 /* Review button */
+
 .review-button{
-    text-align: center;
-    margin-top: 30px;
-    
+    text-align:center;
+    margin-top:30px;
 }
+
 .review-btn{
     display:inline-block;
     padding:10px 20px;
     background:#f0e0e0;
     color:white;
-    text-decoration:none;
     border-radius:5px;
-  }
+}
 
-/* Instructions section */
+/* Instructions */
 
 .recipe-steps{
     max-width:850px;
     margin:50px auto;
     line-height:1.8;
-}
-
-.recipe-steps p{
-    margin-bottom:30px;
 }
 
 input[type="radio"]{
@@ -291,17 +264,12 @@ input[type="radio"]{
     display:block;
     padding:12px;
     margin:10px 0;
-
     border-radius:8px;
-
     background:#f3f3f3;
-
-    transition:
-        transform .25s ease,
-        box-shadow .25s ease,
-        background .25s ease,
-        font-size .25s ease;
+    transition:.25s;
 }
+
+/* Highlight active step */
 
 #step1:checked ~ .steps label[for="step1"],
 #step2:checked ~ .steps label[for="step2"],
@@ -315,91 +283,65 @@ input[type="radio"]{
 #step10:checked ~ .steps label[for="step10"],
 #step11:checked ~ .steps label[for="step11"]{
 
-
     background:#dfcdd5;
     border-left:6px solid #ae869d;
-
-    transform:translateY(-6px); 
+    transform:translateY(-6px);
     box-shadow:0 10px 22px rgba(0,0,0,0.12);
-
-    font-size:19px;                
+    font-size:19px;
     font-weight:500;
-
 }
 
-.next{
-    display:inline-block;
-    margin-top:15px;
-    padding:10px 16px;
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
 
-    background:#dfcdd5;
-    color:white;
+@media (max-width:768px){
 
-    border-radius:6px;
-
-    cursor:pointer;
+.header{
+    flex-direction:column;
+    gap:10px;
+    text-align:center;
+    padding:20px;
 }
 
-/* ===============================
-   MOBILE RESPONSIVE FIXES
-================================ */
+.logo{
+    position:static;
+    transform:none;
+}
 
-@media (max-width: 768px){
+.main-nav{
+    flex-wrap:wrap;
+    gap:15px;
+}
 
-    /* Header stacks vertically */
-    .header{
-        flex-direction:column;
-        gap:10px;
-        text-align:center;
-        padding:20px;
-    }
-    
-    .logo{
-        position:static;
-        transform:none;
-    }
-    
-    /* Navigation wraps */
-    .main-nav{
-        display:flex;
-        flex-wrap:wrap;
-        justify-content:center;
-        gap:15px;
-    }
-    
-    /* Recipe cards resize */
-    .card-flip{
-        width:45%;
-    }
-    
-    /* Testimonials stack */
-    .testimonial-grid{
-        flex-direction:column;
-        align-items:center;
-    }
-    
-    /* Recipe page layout stacks */
-    .recipe-info-container{
-        grid-template-columns:1fr;
-        gap:25px;
-    }
-    
-    /* Recipe image responsive */
-    .recipe-image img{
-        height:auto;
-    }
-    
-    /* Reduce large heading sizes */
-    h2{
-        font-size:26px;
-    }
-    
-    h3{
-        font-size:22px;
-    }
-    
-    }
+.card-flip{
+    width:45%;
+}
 
+.testimonial-grid{
+    flex-direction:column;
+    align-items:center;
+}
+
+.recipe-info-container{
+    grid-template-columns:1fr;
+    gap:25px;
+}
+
+.recipe-image img{
+    width:100%;
+    height:auto;
+}
+
+h2{
+    font-size:26px;
+}
+
+h3{
+    font-size:22px;
+}
+
+}
 
 
 
