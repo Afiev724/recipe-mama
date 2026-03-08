@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Your Own Recipe - Recipe Mama</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <header class="header">
+            <div class="header-left">
+                <input type="text" placeholder="Search Recipes..." class="search-bar">
+            </div>
+
+            <h1 class="logo">Recipe Mama</h1>
+
+            <div class="header-right">
+                <a href="#">Sign in</a>
+                <button class="subscribe-btn">Subscribe</button>
+            </div>
+        </header>
+
+        <nav class="main-nav">
+            <a href="index.html">Home</a>
+            <a href="recipelist.html">Recipe List</a>
+            <a href="reviews.html">Reviews</a>
+            <a href="addyourown.html">Add Your Own</a>
+        </nav>
+
+        <section class="share-intro">
+            <h2>Share Your Recipe</h2>
+            <p>Contribute to Recipe Mama by submitting your own favorite dish for others to try.</p>
+        </section>
+
+        <section class="share-form-wrap">
+            <h3>Recipe Submission</h3>
+            <form class="share-form" action="#" method="post">
+                <div class="form-row">
+                    <label for="submitter-name">Your Name</label>
+                    <input type="text" id="submitter-name" name="submitter-name" placeholder="Chef name" required>
+                </div>
+
+                <div class="form-row">
+                    <label for="recipe-title">Recipe Title</label>
+                    <input type="text" id="recipe-title" name="recipe-title" placeholder="Example: Creamy Mushroom Pasta" required>
+                </div>
+
+                <div class="form-row two-col">
+                    <div>
+                        <label for="prep-time">Prep Time</label>
+                        <input type="text" id="prep-time" name="prep-time" placeholder="20 minutes" required>
+                    </div>
+                    <div>
+                        <label for="servings">Servings</label>
+                        <input type="number" id="servings" name="servings" min="1" placeholder="4" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <label for="diet">Diet Type</label>
+                    <select id="diet" name="diet" required>
+                        <option value="">Select a diet type</option>
+                        <option>None / Regular</option>
+                        <option>Vegetarian</option>
+                        <option>Vegan</option>
+                        <option>Pescatarian</option>
+                        <option>Gluten-Free</option>
+                        <option>Dairy-Free</option>
+                        <option>Keto</option>
+                    </select>
+                </div>
+
+                <div class="form-row">
+                    <label for="ingredients">Ingredients</label>
+                    <textarea id="ingredients" name="ingredients" rows="6" placeholder="List each ingredient on a new line" required></textarea>
+                </div>
+
+                <div class="form-row">
+                    <label for="instructions">Instructions</label>
+                    <textarea id="instructions" name="instructions" rows="7" placeholder="Describe each step clearly" required></textarea>
+                </div>
+
+                <div class="form-row">
+                    <label for="tips">Optional Tips</label>
+                    <textarea id="tips" name="tips" rows="4" placeholder="Any substitutions, serving ideas, or helpful notes"></textarea>
+                </div>
+
+                <button type="submit" class="share-submit-btn">Share Recipe</button>
+            </form>
+        </section>
+
+        <section class="community-shares">
+            <h3>Community Recipe Highlights</h3>
+            <div class="share-cards">
+                <article class="share-card">
+                    <h4>Spicy Coconut Noodles</h4>
+                    <p class="share-meta">By Nina L. | Vegan</p>
+                    <p>A creamy, spicy noodle bowl with coconut milk, lime, and crispy tofu for a quick weeknight meal.</p>
+                </article>
+
+                <article class="share-card">
+                    <h4>Lemon Herb Baked Cod</h4>
+                    <p class="share-meta">By David M. | Pescatarian</p>
+                    <p>Bright lemon flavor, garlic, and parsley baked into flaky cod. Great with roasted potatoes.</p>
+                </article>
+
+                <article class="share-card">
+                    <h4>One-Pot Turkey Chili</h4>
+                    <p class="share-meta">By Carla P. | Gluten-Free</p>
+                    <p>Hearty chili with lean turkey, beans, and tomatoes. Simple prep and perfect for meal prep.</p>
+                </article>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
