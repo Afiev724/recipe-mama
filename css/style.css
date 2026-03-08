@@ -99,7 +99,7 @@ main{
 
     box-shadow:0 8px 18px rgba(0,0,0,0.1);
 
-    font-size:15px;
+    font-size:20px;
     line-height:1.6;
 }
 .testimonial-card h4{
@@ -218,10 +218,9 @@ main{
 
 .recipe-info-container{
     display:grid;
-    grid-template-columns:1fr 1fr;
+    grid-template-columns:2fr 1fr;
     gap:60px;
-    max-width:600px;
-    margin:40px auto;
+    align-items:start;
 }
 
 
