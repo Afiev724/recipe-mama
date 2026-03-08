@@ -50,7 +50,7 @@ main{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background:#c2adai;
+    background:#c2ada1;
     padding: 15px 40px;
     font-size:20px;
 }
@@ -318,4 +318,3 @@ input[type="radio"]{
 
     cursor:pointer;
 }
-
