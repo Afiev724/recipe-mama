@@ -3,7 +3,7 @@
 --blush: #FFF1EF;
 --dusty-pink: #EFE2E0;
 --latte: #DFD4CC;
---light-taupe: #d8d1ce;
+--light-taupe: #dfcdd5;
 --mocca: #c2adai
 
 */ 
@@ -23,7 +23,26 @@ h2{
     margin-bottom:15px;
 }
 
-.main{
+
+h3{
+    font-family:"Playfair Display", serif;
+    font-size:25px;
+    font-weight:600;
+    letter-spacing:.4px;
+
+    margin-bottom:15px;
+}
+
+h4{
+    font-family:"Playfair Display", serif;
+    font-size:20px;
+    font-weight:600;
+    letter-spacing:.4px;
+
+    margin-bottom:15px;
+
+}
+main{
     max-width:1100px;
     margin:auto;
 }
@@ -31,17 +50,22 @@ h2{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background:#EFE2E0;
+    background:#c2adai;
     padding: 15px 40px;
     font-size:20px;
 }
 
+.logo{
+    position:absolute;
+    left:50%;
+    transform:translateX(-50%);
+}
 .main-nav a{
     display: flex;
     justify-content: center;
     gap: 40px;
     padding: 15px;
-    background: #d8d1ce;
+    background: #dfcdd5;
     text-transform:uppercase;
     letter-spacing:.08em;
     font-size:14px;
@@ -192,8 +216,6 @@ h2{
 }
 
 
-/* Ingredients + info layout */
-
 .recipe-info-container{
     display:grid;
     grid-template-columns:1fr 1fr;
@@ -202,8 +224,6 @@ h2{
     margin:40px auto;
 }
 
-
-/* Ingredient + info boxes */
 
 .ingredients,
 .recipe-info-box{
@@ -214,12 +234,12 @@ h2{
 }
 
 
-/* Ingredient list styling */
 
 .ingredients ul{
     padding-left:20px;
     line-height:1.8;
-    font-size: 15px;
+    font-size: 20px;
+
 }
 
 
@@ -256,7 +276,11 @@ input[type="radio"]{
 
     background:#f3f3f3;
 
-    transition:all .3s;
+    transition:
+        transform .25s ease,
+        box-shadow .25s ease,
+        background .25s ease,
+        font-size .25s ease;;
 }
 
 #step1:checked ~ .steps label[for="step1"],
@@ -271,8 +295,16 @@ input[type="radio"]{
 #step10:checked ~ .steps label[for="step10"],
 #step11:checked ~ .steps label[for="step11"]{
 
-    background:#ffe8d9;
-    border-left:5px solid #ff7b54;
+
+    background:#dfcdd5;
+    border-left:6px solid #ae869d;
+
+    transform:translateY(-6px); 
+    box-shadow:0 10px 22px rgba(0,0,0,0.12);
+
+    font-size:19px;                
+    font-weight:500;
+
 }
 
 .next{
@@ -280,7 +312,7 @@ input[type="radio"]{
     margin-top:15px;
     padding:10px 16px;
 
-    background:#ff7b54;
+    background:#dfcdd5;
     color:white;
 
     border-radius:6px;
