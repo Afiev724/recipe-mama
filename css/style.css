@@ -112,74 +112,83 @@ main{
     gap:40px;
     justify-content:center;
     flex-wrap:wrap;
- }
+}
+
+/* Card container */
 .card-flip{
     width:200px;
     height:260px;
-    perspective: 1000px;
-    transition: transform .25s ease, box-shadow .25s ease;
-
+    perspective:1000px;
+    transition:transform .25s ease, box-shadow .25s ease;
     box-shadow:0 4px 12px rgba(0,0,0,0.15);
 }
+
+.card-flip:hover{
+    transform:translateY(-8px);
+    box-shadow:0 14px 28px rgba(0,0,0,0.18);
+}
+
+/* Inner flipping element */
 .card-flip-inner{
-    position: relative;
+    position:relative;
     width:100%;
     height:100%;
-
-    transition: transform .6s;
-    transform-style: preserve-3d;
-
-    will-change: transform;
-}
-.card-flip:hover{
-    transform: translateY(-8px);
-
-    box-shadow: 0 14px 28px rgba(0,0,0,0.18);
+    transition:transform .6s;
+    transform-style:preserve-3d;
 }
 
 .card-flip:hover .card-flip-inner{
     transform:rotateY(180deg);
 }
+
+/* Front and back share base styling */
 .card-flip-front,
 .card-flip-back{
     position:absolute;
     width:100%;
     height:100%;
-
-    backface-visibility: hidden;
-    border-radius: 12px;
-
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-    box-shadow:0 4px 12px rgba(0,0,0,0.15);
-
+    backface-visibility:hidden;
+    border-radius:12px;
+    overflow:hidden;
 }
+
+/* FRONT SIDE */
+.card-flip-front{
+    display:flex;
+    flex-direction:column;
+    background:white;
+}
+
+/* Title */
 .card-flip-front h3{
+    padding:15px;
+    margin:0;
     font-family:"Playfair Display", serif;
     font-size:18px;
     font-weight:600;
-
-
-    margin:10px 0;
 }
+
+/* Image fills remaining space */
 .card-flip-front img{
     width:100%;
-    height: 100px;
+    flex-grow:1;
     object-fit:cover;
-    border-radius: 12px;
+    border-bottom-left-radius:12px;
+    border-bottom-right-radius:12px;
 }
 
+/* BACK SIDE */
 .card-flip-back{
-    background: white;
+    background:white;
     transform:rotateY(180deg);
-
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
     padding:15px;
     text-align:center;
-
 }
+
 
 
 
