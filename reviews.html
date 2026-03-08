@@ -42,5 +42,186 @@
             <p>See what others are saying about our recipes, and share your own experience!</p>
         </section>
 
+<!-- Review Submission Form -->
+        <section class="review-form-section">
+            <h3>Leave a Review</h3>
+            <form class="review-form" action="#" method="post">
+                
+                <div class="form-group">
+                    <label for="recipe-select">Recipe</label>
+                    <select id="recipe-select" name="recipe" required>
+                        <option value="">Select a recipe...</option>
+                        <option value="Cheesy Potato Ball">Cheesy Potato Ball</option>
+                        <option value="Creamy Garlic Chicken">Creamy Garlic Chicken</option>
+                        <option value="Garlic Parmesan Chicken">Garlic Parmesan Chicken</option>
+                        <option value="Greek Chicken">Greek Chicken</option>
+                        <option value="Ham and Swiss">Ham and Swiss</option>
+                        <option value="Honey Garlic Chicken">Honey Garlic Chicken</option>
+                        <option value="Instant Pot Beef">Instant Pot Beef</option>
+                        <option value="Marry Me Salmon">Marry Me Salmon</option>
+                        <option value="One Pan Shrimp">One Pan Shrimp</option>
+                        <option value="Pesto Quinoa">Pesto Quinoa</option>
+                        <option value="Salmon Patties">Salmon Patties</option>
+                        <option value="Stir Fry Vermicelli">Stir Fry Vermicelli</option>
+                        <option value="The Sandwich">The Sandwich</option>
+                    </select>
+                </div>
 
-        
+                <div class="form-group">
+                    <label for="reviewer-name">Your Name</label>
+                    <input type="text" id="reviewer-name" name="name" required placeholder="Enter your name">
+                </div>
+
+                <div class="form-group">
+                    <label for="rating">Rating</label>
+                    <div class="star-rating">
+                        <input type="radio" id="star5" name="rating" value="5" required>
+                        <label for="star5">★</label>
+                        <input type="radio" id="star4" name="rating" value="4">
+                        <label for="star4">★</label>
+                        <input type="radio" id="star3" name="rating" value="3">
+                        <label for="star3">★</label>
+                        <input type="radio" id="star2" name="rating" value="2">
+                        <label for="star2">★</label>
+                        <input type="radio" id="star1" name="rating" value="1">
+                        <label for="star1">★</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="review-text">Your Review</label>
+                    <textarea id="review-text" name="review" rows="5" required placeholder="Share your thoughts about this recipe..."></textarea>
+                </div>
+
+                <button type="submit" class="submit-review-btn">Submit Review</button>
+            </form>
+        </section>
+
+
+        <!-- Existing Reviews Display -->
+        <section class="reviews-display">
+            <h3>What Others Are Saying</h3>
+            
+            <div class="reviews-container">
+
+                <!-- Sample Review 1 -->
+                <div class="review-card">
+                    <div class="review-header">
+                        <h4>Honey Garlic Chicken</h4>
+                        <div class="review-rating">★★★★★</div>
+                    </div>
+                    <p class="review-text">
+                        "This recipe is absolutely delicious! The honey garlic sauce is the perfect balance of sweet and savory. 
+                        My whole family loved it, and it's now a weekly staple in our home. So easy to make too!"
+                    </p>
+                    <p class="review-author">- Sarah M.</p>
+                    <p class="review-date">March 1, 2026</p>
+                </div>
+
+                <!-- Sample Review 2 -->
+                <div class="review-card">
+                    <div class="review-header">
+                        <h4>Marry Me Salmon</h4>
+                        <div class="review-rating">★★★★★</div>
+                    </div>
+                    <p class="review-text">
+                        "I made this for a dinner party and everyone asked for the recipe! The creamy sun-dried tomato sauce 
+                        with the perfectly cooked salmon was restaurant-quality. Will definitely make again!"
+                    </p>
+                    <p class="review-author">- Michael K.</p>
+                    <p class="review-date">February 28, 2026</p>
+                </div>
+
+                <!-- Sample Review 3 -->
+                <div class="review-card">
+                    <div class="review-header">
+                        <h4>Creamy Garlic Chicken</h4>
+                        <div class="review-rating">★★★★☆</div>
+                    </div>
+                    <p class="review-text">
+                        "Really tasty and simple to prepare. The creamy garlic sauce is amazing! I added some mushrooms 
+                        and spinach for extra veggies. Only thing is I wish it had a bit more garlic for my taste. :/"
+                    </p>
+                    <p class="review-author">- Jessica T.</p>
+                    <p class="review-date">February 25, 2026</p>
+                </div>
+
+                <!-- Sample Review 4 -->
+                <div class="review-card">
+                    <div class="review-header">
+                        <h4>Pesto Quinoa</h4>
+                        <div class="review-rating">★★★★★</div>
+                    </div>
+                    <p class="review-text">
+                        "As a vegetarian, I'm always looking for filling and flavorful meals. This pesto quinoa exceeded 
+                        my expectations! It's healthy, delicious, and perfect for meal prep. Love it!"
+                    </p>
+                    <p class="review-author">- Amanda R.</p>
+                    <p class="review-date">February 22, 2026</p>
+                </div>
+
+                <!-- Sample Review 5 -->
+                <div class="review-card">
+                    <div class="review-header">
+                        <h4>Greek Chicken</h4>
+                        <div class="review-rating">★★★★★</div>
+                    </div>
+                    <p class="review-text">
+                        "The Mediterranean flavors in this dish are incredible! The chicken was tender and juicy, 
+                        and the marinade was spot on. Served it with some rice and a Greek salad. Chef's Kiss!"
+                    </p>
+                    <p class="review-author">- David P.</p>
+                    <p class="review-date">February 20, 2026</p>
+                </div>
+
+                <!-- Sample Review 6 -->
+                <div class="review-card">
+                    <div class="review-header">
+                        <h4>Cheesy Potato Ball</h4>
+                        <div class="review-rating">★★★★★</div>
+                    </div>
+                    <p class="review-text">
+                        "These were a huge hit at our game night! Crispy on the outside, cheesy and delicious on the inside. 
+                        Everyone kept asking me to make more. They're addictive!"
+                    </p>
+                    <p class="review-author">- Rachel L.</p>
+                    <p class="review-date">February 18, 2026</p>
+                </div>
+
+                <!-- Sample Review 7 -->
+                <div class="review-card">
+                    <div class="review-header">
+                        <h4>One Pan Shrimp</h4>
+                        <div class="review-rating">★★★★☆</div>
+                    </div>
+                    <p class="review-text">
+                        "Quick and easy weeknight dinner! The shrimp cooked perfectly and cleanup was a breeze with just 
+                        one pan. I'd add more vegetables next time for extra nutrition, but overall a great recipe."
+                    </p>
+                    <p class="review-author">- Kevin H.</p>
+                    <p class="review-date">February 15, 2026</p>
+                </div>
+
+                <!-- Sample Review 8 -->
+                <div class="review-card">
+                    <div class="review-header">
+                        <h4>Instant Pot Beef</h4>
+                        <div class="review-rating">★★★★★</div>
+                    </div>
+                    <p class="review-text">
+                        "The beef was tenderism and the flavors were rich and delicious. Love that I can make 
+                        this in my instant pot on busy days. Comfort food at its finest!"
+                    </p>
+                    <p class="review-author">- Lisa W.</p>
+                    <p class="review-date">February 12, 2026</p>
+                </div>
+
+            </div>
+        </section>
+
+
+    </main>
+</body>
+
+</html>       
+
