@@ -9,7 +9,18 @@
 */ 
 body{
     background:#FDF5F4;
-    
+    font-family:"Libre Baskerville", serif;
+}
+
+
+
+h2{
+    font-family:"Playfair Display", serif;
+    font-size:32px;
+    font-weight:600;
+    letter-spacing:.4px;
+
+    margin-bottom:15px;
 }
 
 .main{
@@ -25,12 +36,15 @@ body{
     font-size:20px;
 }
 
-.main-nav{
+.main-nav a{
     display: flex;
     justify-content: center;
     gap: 40px;
     padding: 15px;
     background: #d8d1ce;
+    text-transform:uppercase;
+    letter-spacing:.08em;
+    font-size:14px;
 }
 
 .introduction{
@@ -119,8 +133,13 @@ body{
     box-shadow:0 4px 12px rgba(0,0,0,0.15);
 
 }
-.card-flip-front{
-    background: white;
+.card-flip-front h3{
+    font-family:"Playfair Display", serif;
+    font-size:18px;
+    font-weight:600;
+
+
+    margin:10px 0;
 }
 .card-flip-front img{
     width:100%;
@@ -147,15 +166,16 @@ body{
 }
 
 
-/* Page title */
-
-.recipe-title{
+.recipe-title h1{
     text-align:center;
+    font-family: "Playfair Display", serif;
+    font-size:48px;
+    font-weight:600;
+    letter-spacing:.5px;
+
     margin-top:40px;
+    margin-bottom:10px;
 }
-
-
-/* Recipe image */
 
 .recipe-image{
     display:flex;
@@ -199,6 +219,7 @@ body{
 .ingredients ul{
     padding-left:20px;
     line-height:1.8;
+    font-size: 15px;
 }
 
 
@@ -266,3 +287,4 @@ input[type="radio"]{
 
     cursor:pointer;
 }
+
