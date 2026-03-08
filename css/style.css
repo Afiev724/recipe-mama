@@ -528,3 +528,147 @@ input[type="radio"]{
     color:#999;
     margin:0;
 }
+
+/* Add Your Own Page */
+
+.share-intro{
+    max-width:740px;
+    margin:60px auto 35px;
+    text-align:center;
+}
+
+.share-intro p{
+    font-size:18px;
+    line-height:1.6;
+    color:#555;
+}
+
+.share-form-wrap{
+    max-width:760px;
+    margin:0 auto 60px;
+    padding:32px;
+    background:#fff;
+    border-radius:12px;
+    box-shadow:0 8px 18px rgba(0,0,0,0.1);
+}
+
+.share-form-wrap h3{
+    text-align:center;
+    margin-bottom:22px;
+}
+
+.share-form .form-row{
+    margin-bottom:18px;
+}
+
+.share-form .two-col{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:15px;
+}
+
+.share-form label{
+    display:block;
+    margin-bottom:8px;
+    font-weight:600;
+    font-size:16px;
+    color:#333;
+}
+
+.share-form input[type="text"],
+.share-form input[type="number"],
+.share-form select,
+.share-form textarea{
+    width:100%;
+    padding:12px;
+    border:2px solid #dfd4cc;
+    border-radius:8px;
+    font-family:"Libre Baskerville", serif;
+    font-size:15px;
+    background:#fff1ef;
+    transition:border-color 0.3s ease;
+}
+
+.share-form input:focus,
+.share-form select:focus,
+.share-form textarea:focus{
+    outline:none;
+    border-color:#dfcdd5;
+}
+
+.share-form textarea{
+    resize:vertical;
+    min-height:110px;
+}
+
+.share-submit-btn{
+    width:100%;
+    padding:14px;
+    background:#dfcdd5;
+    color:#fff;
+    border:none;
+    border-radius:8px;
+    font-size:18px;
+    font-weight:600;
+    cursor:pointer;
+    transition:background 0.3s ease;
+}
+
+.share-submit-btn:hover{
+    background:#c2ada1;
+}
+
+.community-shares{
+    max-width:900px;
+    margin:0 auto 80px;
+}
+
+.community-shares h3{
+    text-align:center;
+    margin-bottom:28px;
+}
+
+.share-cards{
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap:18px;
+}
+
+.share-card{
+    background:#fff;
+    padding:22px;
+    border-radius:12px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.1);
+}
+
+.share-card h4{
+    margin-bottom:8px;
+}
+
+.share-meta{
+    font-size:14px;
+    color:#7f7f7f;
+    margin:0 0 10px;
+}
+
+.share-card p{
+    line-height:1.6;
+    margin:0;
+}
+
+@media (max-width: 900px){
+    .share-cards{
+        grid-template-columns:1fr;
+    }
+}
+
+@media (max-width: 640px){
+    .share-form-wrap{
+        padding:20px;
+    }
+
+    .share-form .two-col{
+        grid-template-columns:1fr;
+        gap:10px;
+    }
+}
