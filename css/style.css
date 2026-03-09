@@ -687,7 +687,6 @@ input[type="radio"]{
     .share-form-wrap{
      padding:20px;
     }
-   
     .share-form .two-col{
      grid-template-columns:1fr;
      gap:10px;
